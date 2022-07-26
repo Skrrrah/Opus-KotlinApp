@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Opus-KotlinApp/app/src/main/opus.png"  width="300" height="300">
+  <img src="app/src/main/opus.png"  width="300" height="300">
   <h1 align="center">Opus</h1>
 </p>
 
