@@ -26,7 +26,7 @@
 * **Lottie** penambahan animasi
 
 ## Dikembangkan Oleh
+**Politeknik Negeri Ujung Pandang - Teknik Multimedia & Jaringan**
 * 42620001 Miftahul Khairi Tawil
 * 42620004 Annisa Resky Ramadhani
 * 42620018 Syamara Taufiq
-* **Politeknik Negeri Ujung Pandang - Teknik Multimedia & Jaringan**
