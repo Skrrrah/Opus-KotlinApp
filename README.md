@@ -13,7 +13,7 @@
 * Pengguna akan mengeklik pada daftar yang sesuai dengan pencarian
 
 
-## Technologies Used
+## Tech Stack yang digunakan
 
 * **Kotlin** sebagai bahasa utama
 * **MVVM** architecture pattern menggunakan Android Architecture Components
