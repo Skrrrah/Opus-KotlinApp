@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/bookScanFragment"
+        android:name="maurya.devansh.bookidentification.screens.coverscan.CoverScanFragment"
+        android:label="fragment_book_scan"
+        tools:layout="@layout/fragment_cover_scan" >
+        <action
+            android:id="@+id/action_coverScanDone"
+            app:destination="@id/booksListFragment"
+            app:enterAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_bookScanFragment_to_scanOptionsFragment"
+            app:destination="@id/scanOptionsFragment" />
+    </fragment>
+    <fragment android:id="@+id/scanOptionsFragment"
+        android:name="maurya.devansh.bookidentification.screens.options.ScanOptionsFragment"
+        android:label="Pukapuka" tools:layout="@layout/fragment_scan_options">
+        <action android:id="@+id/action_scanOptionsFragment_to_bookScanFragment"
+            app:destination="@id/bookScanFragment" />
+        <action android:id="@+id/action_scanOptionsFragment_to_placeholder"
+            app:destination="@id/placeholder" />
+    </fragment>
+    <fragment android:id="@+id/bookInfoFragment"
+        android:name="maurya.devansh.bookidentification.screens.bookinfo.BookInfoFragment"
+        android:label="Selected Book" tools:layout="@layout/fragment_book_info">
+        <argument android:name="bookVolumeId" android:defaultValue='""' app:argType="string" />
+        <action
+            android:id="@+id/action_bookInfoFragment_to_booksListFragment"
+            app:destination="@id/booksListFragment" />
+    </fragment>
+    <fragment android:id="@+id/booksListFragment"
+        android:name="maurya.devansh.bookidentification.screens.bookslist.BooksListFragment"
+        android:label="Scan Results" tools:layout="@layout/fragment_books_list">
+        <action android:id="@+id/action_bookSelected" app:destination="@id/bookInfoFragment" />
+        <argument android:name="queryString" android:defaultValue='""' app:argType="string" />
+        <action android:id="@+id/action_booksListFragment_to_scanOptionsFragment"
+            app:destination="@id/scanOptionsFragment" app:popUpTo="@+id/scanOptionsFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_noResultsFound"
+            app:destination="@id/noResultsFoundFragment" />
+    </fragment>
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_booksListFragment"
+            app:destination="@id/booksListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noResultsFoundFragment"
+        android:name="maurya.devansh.bookidentification.screens.noresultsfound.NoResultsFoundFragment"
+        android:label="No Results Found"
+        tools:layout="@layout/fragment_no_results_found" >
+        <action
+            android:id="@+id/action_noResultsFoundFragment_to_scanOptionsFragment"
+            app:destination="@id/scanOptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="maurya.devansh.bookidentification.screens.splash.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_appStart"
+            app:destination="@id/scanOptionsFragment"
+            app:popUpTo="@+id/splashScreenFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

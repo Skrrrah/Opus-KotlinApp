@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617084803337",
+    "project_id": "opus-42e7c",
+    "storage_bucket": "opus-42e7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617084803337:android:963a79a544689885b51bd8",
+        "android_client_info": {
+          "package_name": "maurya.devansh.bookidentification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617084803337-pachfpv2gvi8fk9r9dgu5qtnvi5bisce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADP8-lvTQ0kLJxA-XvRO6bUCrCBXp7YRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617084803337-pachfpv2gvi8fk9r9dgu5qtnvi5bisce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
