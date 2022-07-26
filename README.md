@@ -7,7 +7,7 @@
 
 ## Bagaimana Opus bekerja?
 
-* Opus menggunakan ** Firebase ML Kit Text Recognition API** untuk mengenali teks dari gambar yang sudah dipindai oleh scanner
+* Opus menggunakan **Firebase ML Kit Text Recognition API** untuk mengenali teks dari gambar yang sudah dipindai oleh scanner
 * Teks diekstrak dari gambar lalu difilter agar sesuai dengan pencarian
 * Teks yang telah difilter digunakan untuk melakukan pemanggilan GET ke **Google Books API** & menampilkan daftar buku yang relevan dengan pencarian
 * Pengguna akan mengeklik buku pada daftar yang sesuai dengan pencarian
