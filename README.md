@@ -9,7 +9,7 @@
 
 * Opus menggunakan Firebase **ML Kit’s Text Recognition API** untuk mengenali teks dari gambar yang didapat scanner
 * Teks diekstrak dari gambar lalu difilter agar sesuai dengan pencarian
-* Teks yang telah difilter digunakan untuk membuat pemanggilan GET ke **Google Books API** untuk mendapatkan daftar buku yang relevan
+* Teks yang telah difilter digunakan untuk membuat pemanggilan GET ke **Google Books API** agar mendapatkan daftar buku yang relevan
 * Pengguna akan mengeklik pada daftar yang sesuai dengan pencarian
 
 
